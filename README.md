@@ -4,13 +4,13 @@ For the most scripts you need a custom compiles.sqf, variables.sqf, fn_selfActio
 
 # Index:
  
-* [compiles.sqf](https://github.com/AirwavesMan/custom-epoch-functions#compiles.sqf)
-* [variables.sqf](https://github.com/AirwavesMan/custom-epoch-functions#variables.sqf)
-* [fn_selfActions.sqf](https://github.com/AirwavesMan/custom-epoch-functions#fn_selfActions.sqf)
-* [configVariables.sqf](https://github.com/AirwavesMan/custom-epoch-functions#configVariables.sqf)
-* [Example: Custom compiles.sqf, variables.sqf, fn_selfActions.sqf, configVariables.sqf](https://github.com/AirwavesMan/custom-epoch-functions#example)
+* [compiles](https://github.com/AirwavesMan/custom-epoch-functions#compiles)
+* [variables](https://github.com/AirwavesMan/custom-epoch-functions#variables)
+* [fn_selfActions](https://github.com/AirwavesMan/custom-epoch-functions#fn_selfActions)
+* [configVariables](https://github.com/AirwavesMan/custom-epoch-functions#configVariables)
+* [example](https://github.com/AirwavesMan/custom-epoch-functions#example)
 
-# compiles.sqf
+# compiles
 
 Open init.sqf in your missionfolder and search the following line:
 
@@ -57,7 +57,7 @@ Open your compiles.sqf and add this:
 	
 Save and you have created a custom compiles.
 
-# variables.sqf
+# variables
 
 Open init.sqf in your missionfolder and search the following line:
 
@@ -98,7 +98,7 @@ Open your variables.sqf and add this:
 	
 Save and you have created a custom variables.sqf.
 
-# fn_selfActions.sqf
+# fn_selfActions
 
 Open your custom compiles and search for:
 
@@ -121,7 +121,7 @@ Add this line to your custom compiles so it looks like this:
 Now you have to create a folder called compile in the folder dayz_code. If you have done this you are ready to put the fn_selfActions.sqf into that folder.
 Take the fn_selfActions.sqf from this repo and it into the folder called compile and you are done.
 
-# configVariables.sqf
+# configVariables
 
 Open init.sqf in your missionfolder and search the following line:
 
@@ -162,7 +162,7 @@ Open your configVariables.sqf and add this:
 	
 Save and you have created a custom configVariables.sqf.
 
-# Example: Custom compiles.sqf, variables.sqf, fn_selfActions.sqf, configVariables.sqf
+# example
 
 This repo has an example for all those functions you can use. It contains a custom compiles.sqf, variables.sqf, fn_selfActions.sqf, configVariables.sqf
 
