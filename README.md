@@ -14,38 +14,38 @@ For the most scripts you need a custom compiles.sqf, variables.sqf, fn_selfActio
 
 Open init.sqf in your missionfolder and search the following line:
 
-	```sqf
+
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";
-	```
+
 
 Add directly under this line:
 
-	```sqf
+
 	call compile preprocessFileLineNumbers "dayz_code\init\compiles.sqf";
-	```
+
 
 So it looks like that:
 
-	```sqf
+
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";
 	call compile preprocessFileLineNumbers "dayz_code\init\compiles.sqf";
-	```
+
 
 Now you have to create the acutal compiles.sqf. Make a new folder in your missionfolder called dayz_code and create in the folder dayz_code a new folder called init. so you have this structure:
 
-	```sqf
+
 	dayz_code\init
-	```
+
 
 Enter the init folder now and create a file called: 
 
-	```sqf
+
 	compiles.sqf
-	```
+
 
 Open your compiles.sqf and add this:
 
-	```sqf
+
 	if (isServer) then {
 		diag_log "Loading custom server compiles";
 	};
@@ -53,7 +53,7 @@ Open your compiles.sqf and add this:
 	if (!isDedicated) then {
 		diag_log "Loading custom client compiles";
 	};
-	```
+
 	
 Save and you have created a custom compiles.
 
@@ -61,32 +61,32 @@ Save and you have created a custom compiles.
 
 Open init.sqf in your missionfolder and search the following line:
 
-	```sqf
+
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";
-	```
+
 
 Add directly under this line:
 
-	```sqf
+
 	call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";
-	```
+
 
 So it looks like that:
 
-	```sqf
+
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";
 	call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";
-	```
+
 
 You have already created the folder dayz_code and init. So enter the init folder and create a file called: 
 
-	```sqf
+
 	variables.sqf
-	```
+
 
 Open your variables.sqf and add this:
 
-	```sqf
+
 	if (isServer) then {
 		diag_log "Loading custom server variables";
 	};
@@ -94,7 +94,7 @@ Open your variables.sqf and add this:
 	if (!isDedicated) then {
 		diag_log "Loading custom client variables";
 	};
-	```
+
 	
 Save and you have created a custom variables.sqf.
 
@@ -102,21 +102,21 @@ Save and you have created a custom variables.sqf.
 
 Open your custom compiles and search for:
 
-	```sqf
+
 	if (!isDedicated) then {
 		diag_log "Loading custom client variables";
 	};
-	```	
+
 	
 Add this line to your custom compiles so it looks like this:
 
-	```sqf
+
 	if (!isDedicated) then {
 		diag_log "Loading custom client compiles";
 
 		fnc_usec_selfActions = compile preprocessFileLineNumbers "dayz_code\compile\fn_selfActions.sqf";
 	};
-	```	
+
 
 Now you have to create a folder called compile in the folder dayz_code. If you have done this you are ready to put the fn_selfActions.sqf into that folder.
 Take the fn_selfActions.sqf from this repo and it into the folder called compile and you are done.
@@ -125,32 +125,32 @@ Take the fn_selfActions.sqf from this repo and it into the folder called compile
 
 Open init.sqf in your missionfolder and search the following line:
 
-	```sqf
+
 	#include "\z\addons\dayz_code\configVariables.sqf"
-	```
+
 
 Add directly under this line:
 
-	```sqf
+
 	#include "dayz_code\configVariables.sqf"
-	```
+
 
 So it looks like that:
 
-	```sqf
+
 	#include "\z\addons\dayz_code\configVariables.sqf"
 	#include "dayz_code\configVariables.sqf"
-	```
+
 
 Enter the dayz_code folder and create a file called: 
 
-	```sqf
+
 	configVariables.sqf
-	```
+
 
 Open your configVariables.sqf and add this:
 
-	```sqf
+
 	if (isServer) then {
 		diag_log "Loading custom server configVariables";
 	};
@@ -158,7 +158,7 @@ Open your configVariables.sqf and add this:
 	if (!isDedicated) then {
 		diag_log "Loading custom client configVariables";
 	};
-	```
+
 	
 Save and you have created a custom configVariables.sqf.
 
