@@ -1,12 +1,8 @@
-# custom-epoch-functions for Epoch 1.0.7.1+
+# custom-epoch-functions for Epoch 1.0.7
 
 For the most scripts you need a custom compiles.sqf, variables.sqf, fn_selfActions.sqf and configVariables.sqf. Here you learn how to create them.
 
 # Index:
- 
-Note: Epoch 1.0.7.1 comes from the start with a custom compiles.sqf, variables.sqf and configVariables.sqf. If you have all that in your missionfile do only this part:
-
-https://github.com/AirwavesMan/custom-epoch-functions#fn_selfactions
  
 * [compiles](https://github.com/AirwavesMan/custom-epoch-functions#compiles)
 * [variables](https://github.com/AirwavesMan/custom-epoch-functions#variables)
